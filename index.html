@@ -1,0 +1,395 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Matheus - Desenvolvedor Front End</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./src/Global/index.js" type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="profile-photo">
+        <img src="./src/assets/images/image-home.png" alt="Imagem Lucas Matheus">
+        <!-- <svg viewBox="0 0 24 24">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg> -->
+      </div>
+      <div class="profile-info">
+        <h1 class="header-title">Lucas Matheus</h1>
+        <p class="header-subtitle">Desenvolvedor Front End</p>
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <div class="sobre-content">
+        <div class="sobre-text">
+          <p>
+            Sou um desenvolvedor Front End apaixonado por criar experiências digitais inovadoras.  
+            Busco constantemente inovação e excelência para desenvolver soluções que fazem a diferença.  
+          </p>
+          <p>
+            Minha jornada na programação começou com curiosidade e se transformou em uma paixão  
+            por criar interfaces modernas e funcionais que melhoram a experiência dos usuários.
+          </p>
+        </div>
+        
+        <div class="sobre-illustration">
+          <svg viewBox="0 0 500 500">
+            <defs>
+              <linearGradient id="sobreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:var(--secondary)" />
+                <stop offset="100%" style="stop-color:var(--accent)" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#sobreGrad)" opacity="0.1"
+              d="M389.5,239.5Q380,329,290,379.5Q200,430,123.5,365Q47,300,73,215Q99,130,184.5,89.5Q270,49,335,114.5Q400,180,389.5,239.5Z" />
+            <circle cx="250" cy="250" r="100" fill="none" stroke="url(#sobreGrad)" stroke-width="2" />
+            <path fill="none" stroke="url(#sobreGrad)" stroke-width="2" d="M200,200 Q250,150 300,200 T400,200" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M3,3H21V21H3V3M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86M13,11.25H8V12.75H9.5V20H11.25V12.75H13V11.25Z" />
+            </svg>
+          </div>
+          <h3>Front-end</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Quasar Framework</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z" />
+            </svg>
+          </div>
+          <h3>Back-end</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M2.6,10.59L8.38,4.8L10.07,6.5C9.83,7.35 10.22,8.28 11,8.73V14.27C10.4,14.61 10,15.26 10,16A2,2 0 0,0 12,18A2,2 0 0,0 14,16C14,15.26 13.6,14.61 13,14.27V9.41L15.07,11.5C15,11.65 15,11.82 15,12A2,2 0 0,0 17,14A2,2 0 0,0 19,12A2,2 0 0,0 17,10C16.82,10 16.65,10 16.5,10.07L13.93,7.5C14.19,6.57 13.71,5.55 12.78,5.16C12.35,5 11.9,4.96 11.5,5.07L9.8,3.38L10.59,2.6C11.37,1.81 12.63,1.81 13.41,2.6L21.4,10.59C22.19,11.37 22.19,12.63 21.4,13.41L13.41,21.4C12.63,22.19 11.37,22.19 10.59,21.4L2.6,13.41C1.81,12.63 1.81,11.37 2.6,10.59Z" />
+            </svg>
+          </div>
+          <h3>Ferramentas</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos Em Destaque</h2>
+      <div class="projetos-grid">
+        <div class="projeto">
+          <svg class="projeto-icon" viewBox="0 0 24 24">
+            <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/>
+          </svg>
+          <h3>Em Manutenção</h3>
+          <p class="projeto-desc">Este projeto está temporariamente em manutenção. Em breve, novidades serão apresentadas aqui.</p>
+         
+          <a href="#" class="projeto-link">
+            Em breve
+            <svg viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <svg class="projeto-icon" viewBox="0 0 24 24">
+            <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/>
+          </svg>
+          <h3>Em Manutenção</h3>
+          <p class="projeto-desc">Este projeto está temporariamente em manutenção. Em breve, novidades serão apresentadas aqui.</p>
+          
+          <a href="#" class="projeto-link">
+            Em breve
+            <svg viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <svg class="projeto-icon" viewBox="0 0 24 24">
+            <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/>
+          </svg>
+          <h3>Em Manutenção</h3>
+          <p class="projeto-desc">Este projeto está temporariamente em manutenção. Em breve, novidades serão apresentadas aqui.</p>
+       
+          <a href="#" class="projeto-link">
+            Em breve
+            <svg viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiência Profissional</h2>
+      <div class="experiencia-lista">
+        <div class="experiencia-item">
+          <div class="experiencia-header">
+            <div class="experiencia-title">
+              <h3>Desenvolvedor Junior</h3>
+              <span class="empresa">NovaData</span>
+            </div>
+            <div class="experiencia-periodo">
+              <svg class="calendar-icon" viewBox="0 0 24 24">
+                <path
+                  d="M19,4H18V2H16V4H8V2H6V4H5C3.89,4 3,4.9 3,6V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V6A2,2 0 0,0 19,4M19,20H5V10H19V20M19,8H5V6H19V8Z" />
+              </svg>
+              <span>2023 - Presente</span>
+            </div>
+          </div>
+          <div class="experiencia-content">
+            <p>Desenvolvimento de interfaces interativas e dinâmicas com Vue.js e Quasar Framework.
+              Colaboração em equipe e aplicação de boas práticas de desenvolvimento.</p>
+            <div class="experiencia-tags">
+              <span class="exp-tag">Vue.js</span>
+              <span class="exp-tag">Quasar</span>
+              <span class="exp-tag">Git</span>
+            </div>
+          </div>
+        </div>
+        <div class="experiencia-item">
+          <div class="experiencia-header">
+            <div class="experiencia-title">
+              <h3>Diretor Alto Tech Juniors</h3>
+              <span class="empresa">AltoTech Junior (empresa junior)</span>
+            </div>
+            <div class="experiencia-periodo">
+              <svg class="calendar-icon" viewBox="0 0 24 24">
+                <path
+                  d="M19,4H18V2H16V4H8V2H6V4H5C3.89,4 3,4.9 3,6V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V6A2,2 0 0,0 19,4M19,20H5V10H19V20M19,8H5V6H19V8Z" />
+              </svg>
+              <span>2023 - 2025</span>
+            </div>
+          </div>
+          <div class="experiencia-content">
+            <p>Definição de estratégias e direção técnica para o desenvolvimento de soluções inovadoras com React JS.
+              Liderança de equipes, gestão de projetos e implementação de melhores práticas para garantir eficiência e
+              qualidade no desenvolvimento.
+              Fomento à capacitação de profissionais juniores, promovendo um ambiente de aprendizado e crescimento
+              contínuo.</p>
+            <div class="experiencia-tags">
+              <span class="exp-tag">Gestão de Projetos</span>
+              <span class="exp-tag">Liderança Técnica</span>
+              <span class="exp-tag">Gestão de Equipes</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="formacao-title">Formação Acadêmica</h3>
+
+        <div class="experiencia-item formacao">
+          <div class="experiencia-header">
+            <div class="experiencia-title">
+              <h3>Bacharelado em Tecnologia da Informação</h3>
+              <span class="empresa">Universidade Federal Rural do Semi-Árido</span>
+            </div>
+            <div class="experiencia-periodo">
+              <svg class="calendar-icon" viewBox="0 0 24 24">
+                <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+              </svg>
+              <span>2018 - 2023</span>
+            </div>
+          </div>
+          <div class="experiencia-content">
+            <p>Formação voltada para o desenvolvimento de soluções baseadas em recursos computacionais, com foco na produção, armazenamento, acesso, processamento, comunicação, segurança e uso estratégico de dados e informações.</p>
+            <div class="experiencia-tags">
+              <span class="exp-tag">Desenvolvimento</span>
+              <span class="exp-tag">comunicação</span>
+              <span class="exp-tag">Metodologias Ágeis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experiencia-item formacao">
+          <div class="experiencia-header">
+            <div class="experiencia-title">
+              <h3>Engenharia de Software</h3>
+              <span class="empresa">Universidade Federal Rural do Semi-Árido</span>
+            </div>
+            <div class="experiencia-periodo">
+              <svg class="calendar-icon" viewBox="0 0 24 24">
+                <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+              </svg>
+              <span>2023 - presente</span>
+            </div>
+          </div>
+          <div class="experiencia-content">
+            <p>Formação voltada para o desenvolvimento e gestão de software, com foco em arquitetura de sistemas, engenharia de requisitos, metodologias ágeis, qualidade de software e otimização de processos de desenvolvimento.</p>
+            <div class="experiencia-tags">
+              <span class="exp-tag">Arquitetura de Software</span>
+              <span class="exp-tag">Gestão de Projetos de TI</span>
+              <span class="exp-tag">Automação de Processos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Vamos Conversar?</h2>
+      <div class="contato-wrapper">
+        <div class="contact-form-wrapper">
+          <form id="contactForm" class="contact-form" action="https://formsubmit.co/46ae8959a6db616415f9eda0b73c64a1"
+            method="POST">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Mensagem</button>
+          </form>
+
+
+          <div class="contato-grid">
+            <div class="contato-item">
+              <svg class="contato-icon" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <a href="mailto:matheusalexandre012@gmail.com?subject=Contato&body=Olá, gostaria de mais informações.">Email</a> 
+            </div>
+            <div class="contato-item">
+              <svg class="contato-icon" viewBox="0 0 24 24">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.68 1.68 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+              </svg>
+              <a href="https://www.linkedin.com/in/lucas-matheus-ba754b226/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contato-item">
+              <svg class="contato-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+              <a href="https://github.com/LucasMatheus12" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato-illustration">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="contactGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:var(--secondary)" />
+                <stop offset="100%" style="stop-color:var(--accent)" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#contactGrad)" opacity="0.1"
+              d="M389.5,239.5Q380,329,290,379.5Q200,430,123.5,365Q47,300,73,215Q99,130,184.5,89.5Q270,49,335,114.5Q400,180,389.5,239.5Z" />
+            <path fill="none" stroke="url(#contactGrad)" stroke-width="2" d="M50,250 Q125,200 250,250 T450,250" />
+            <circle cx="250" cy="250" r="120" fill="none" stroke="url(#contactGrad)" stroke-width="2"
+              stroke-dasharray="10 5" />
+            <g transform="translate(175, 175)">
+              <rect x="0" y="0" width="150" height="100" rx="10" fill="white" stroke="url(#contactGrad)"
+                stroke-width="2" />
+              <line x1="20" y1="30" x2="130" y2="30" stroke="url(#contactGrad)" stroke-width="2" />
+              <line x1="20" y1="50" x2="130" y2="50" stroke="url(#contactGrad)" stroke-width="2" opacity="0.5" />
+              <line x1="20" y1="70" x2="130" y2="70" stroke="url(#contactGrad)" stroke-width="2" opacity="0.3" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Lucas Matheus</h3>
+        <p>Desenvolvedor Front-End</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/LucasMatheus12" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/lucas-matheus-ba754b226/" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.68 1.68 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+          </svg>
+        </a>
+        <a href="mailto:matheusalexandre012@gmail.com?subject=Contato&body=Olá, gostaria de mais informações." class="social-link">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2024 • Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+
+</html>
